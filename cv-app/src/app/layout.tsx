@@ -31,7 +31,7 @@ export default function RootLayout({
       <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o" />
       <Script src="/js/jquery.googlemap.js" />
       <Script src="/js/validator.js" />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className + " page"}>{children}</body>
     </html>
   );
 }

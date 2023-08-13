@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Layout from "@/components/layout";
 
-export default function Home() {
+export default function CvApp() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>jrodriguezweb.it</title>
       </Head>
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24"> */}
       <main>

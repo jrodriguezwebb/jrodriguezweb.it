@@ -1,8 +1,11 @@
-import Head from "next/head";
-import Layout from "@/components/layout";
-import Header from "@/components/header";
-import MainHome from "@/components/main-home";
+import AnimatedBg from "@/components/animated-bg";
 import Footer from "@/components/footer";
+import Head from "next/head";
+import Header from "@/components/header";
+import Layout from "@/components/layout";
+import MainHome from "@/components/main-home";
+import PageScrollLayout from "@/components/theme-components/page-scroll-layout";
+import ScrollToTop from "@/components/scroll-to-top";
 
 export default function Resume() {
   return (
@@ -11,33 +14,16 @@ export default function Resume() {
         <title>jrodriguezweb.it</title>
       </Head>
 
-      <div className="lm-animated-bg"></div>
+      <AnimatedBg></AnimatedBg>
 
-      {/* <!-- Loading animation --> */}
-      {/* <div className="preloader">
-          <div className="preloader-animation">
-            <div className="preloader-spinner"></div>
-          </div>
-        </div> */}
-      {/* <!-- /Loading animation --> */}
+      {/* <Preload></Preload> */}
+      <ScrollToTop></ScrollToTop>
 
-      {/* <!-- Scroll To Top Button --> */}
-      <div className="lmpixels-scroll-to-top">
-        <i className="lnr lnr-chevron-up"></i>
-      </div>
-      {/* <!-- /Scroll To Top Button --> */}
-
-      <div className="page-scroll">
-        <div
-          id="page_container"
-          className="page-container bg-move-effect"
-          data-animation="transition-flip-in-right"
-        >
-          <Header></Header>
-          <MainHome></MainHome>
-          <Footer></Footer>
-        </div>
-      </div>
+      <PageScrollLayout>
+        <Header></Header>
+        <MainHome></MainHome>
+        <Footer></Footer>
+      </PageScrollLayout>
     </Layout>
   );
 }

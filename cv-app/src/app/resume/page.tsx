@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "@/components/layout";
 import Header from "@/components/header";
 import MainHome from "@/components/main-home";
-import Footer from "@/components/layout copy";
+import Footer from "@/components/footer";
 
 export default function Resume() {
   return (

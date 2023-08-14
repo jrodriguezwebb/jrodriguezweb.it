@@ -1,6 +1,6 @@
 export default function Navigation() {
   return (
-    <div className="site-nav mobile-menu-hide">
+    <nav className="site-nav mobile-menu-hide">
       <ul className="leven-classNameic-menu site-main-menu">
         <li className="menu-item menu-item-has-children current-menu-item">
           <a href="index.html">About Me</a>
@@ -52,6 +52,6 @@ export default function Navigation() {
           <a href="contact.html">Contact</a>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }

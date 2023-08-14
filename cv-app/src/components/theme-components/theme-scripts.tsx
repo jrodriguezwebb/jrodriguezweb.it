@@ -12,13 +12,9 @@ export default function ThemeScripts() {
       <Script src="/js/jquery.magnific-popup.min.js" />
       <Script src="/js/jquery.googlemap.js" />
       <Script src="/js/validator.js" />
-      <Script
-        src="https://www.google.com/recaptcha/api.js"
-        strategy="lazyOnload"
-      />
+      <Script src="https://www.google.com/recaptcha/api.js" />
       <Script
         src={`https://maps.googleapis.com/maps/api/js?key=${process.env.google_api_key}`}
-        strategy="lazyOnload"
       />
       <Script src="/js/main.js" strategy="lazyOnload" />
     </>

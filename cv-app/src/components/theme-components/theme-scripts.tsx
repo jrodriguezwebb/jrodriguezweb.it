@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-export default function TemplateScripts() {
+export default function ThemeScripts() {
   return (
     <>
       <Script src="/js/modernizr.custom.js" />

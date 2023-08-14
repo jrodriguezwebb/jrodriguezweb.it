@@ -16,7 +16,7 @@ export default function Home() {
   const services = servicesMock;
 
   return (
-    <MainLayout>
+    <MainLayout singlePost={true}>
       <HomeTopSection>
         <Section key="specialities">
           <Item>

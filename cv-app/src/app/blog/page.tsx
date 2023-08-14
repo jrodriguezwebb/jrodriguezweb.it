@@ -1,9 +1,9 @@
 import StandardPage from "@/components/layout/standard-page";
 
-export default function Resume() {
+export default function Blog() {
   return (
     <StandardPage>
-      <p>Aqui va el CV</p>
+      <p>Aqui deberiamos tener todo lo relacionado con el blog</p>
     </StandardPage>
   );
 }

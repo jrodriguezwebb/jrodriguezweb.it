@@ -1,9 +1,9 @@
 import StandardPage from "@/components/layout/standard-page";
 
-export default function Resume() {
+export default function Contact() {
   return (
     <StandardPage>
-      <p>Aqui va el CV</p>
+      <p>Esta debería ser la pagina de contacto</p>
     </StandardPage>
   );
 }

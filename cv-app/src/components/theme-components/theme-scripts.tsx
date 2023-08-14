@@ -16,7 +16,7 @@ export default function ThemeScripts() {
       <Script
         src={`https://maps.googleapis.com/maps/api/js?key=${process.env.google_api_key}`}
       />
-      <Script src="/js/main.js" strategy="lazyOnload" />
+      <Script src="/js/main.js" />
     </>
   );
 }

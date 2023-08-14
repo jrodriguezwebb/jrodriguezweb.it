@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navigation() {
   return (
     <nav className="site-nav mobile-menu-hide">
@@ -15,7 +17,11 @@ export default function Navigation() {
         </li>
 
         <li className="menu-item">
-          <a href="resume.html">Resume</a>
+          <Link href="/">About Me</Link>
+        </li>
+
+        <li className="menu-item">
+          <Link href="/resume">Resume</Link>
         </li>
 
         <li className="menu-item menu-item-has-children">

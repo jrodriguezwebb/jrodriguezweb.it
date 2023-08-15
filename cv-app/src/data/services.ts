@@ -1,4 +1,4 @@
-import { Service } from "@/models/service.interface";
+import { Service } from "@/models/service.model";
 
 export const servicesMock: Service[] = [
     {

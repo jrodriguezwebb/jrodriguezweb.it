@@ -1,7 +1,5 @@
+import MobileToggleMenuLayout from "../theme-components/mobile-toggle-menu-layout";
+
 export default function MobileToggleMenu() {
-  return (
-    <a className="menu-toggle mobile-visible">
-      <i className="fa fa-bars"></i>
-    </a>
-  );
+  return <MobileToggleMenuLayout></MobileToggleMenuLayout>;
 }

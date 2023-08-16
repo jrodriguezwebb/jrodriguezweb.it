@@ -1,30 +1,25 @@
+import { SocialLink } from "../theme-components/social-link";
+import SocialLinks from "../theme-components/social-links";
+
 export default function Footer() {
   return (
     <footer className="site-footer clearfix">
       <div className="footer-social">
-        <ul className="footer-social-links">
-          <li>
-            <a href="#" target="_blank">
-              Twitter
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              Facebook
-            </a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank">
-              Instagram
-            </a>
-          </li>
-        </ul>
+        <SocialLinks>
+          <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+            Twitter
+          </SocialLink>
+          <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+            Facebook
+          </SocialLink>
+          <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </SocialLink>
+        </SocialLinks>
       </div>
 
       <div className="footer-copyrights">
-        <p>© 2020 All rights reserved. LMPixels.</p>
+        <p>© 2023 All rights reserved. jrodriguezweb.it</p>
       </div>
     </footer>
   );

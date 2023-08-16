@@ -29,12 +29,19 @@ export default function Home() {
           </Item>
         </Section>
         <Section key="description">
-          <h1>Alex Smith</h1>
+          <h1>Jesús Rodríguez</h1>
           <p>
-            Fusce tempor magna mi, non egestas velit ultricies nec. Aenean
-            convallis, risus non condimentum gravida, odio mauris ullamcorper
-            felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna,
-            a placerat sapien pretium eu.
+            I am Jesús Alfredo Rodríguez Pérez, a seasoned Full Stack Developer
+            with over 13 years in web technology. My journey fuses frontend and
+            backend development. Equipped with skills and innovation, I navigate
+            diverse technologies like TypeScript, JavaScript, PHP, Angular,
+            React, Ionic, NodeJS, and more. Crafting captivating user
+            experiences focused on UI design, robust APIs, databases like MySQL,
+            and Agile methodologies. As a Full Stack Developer, I unite both
+            worlds, creating fluid connections and delivering end-to-end
+            solutions. Proficient in English and Spanish, I effectively engage
+            stakeholders and teams. My goal is to craft impactful web solutions
+            with innovation and user-centricity.
           </p>
         </Section>
         <Section key="buttons">

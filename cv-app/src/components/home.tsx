@@ -1,22 +1,18 @@
-//TODO: investigar
-"use client";
-import Button from "./button";
-import Counters from "./counters";
+import BlockTitle from "./theme-components/block-title";
+import Column from "./layout/column";
 import HomeTopSection from "./home-top-section";
 import Item from "./theme-components/item";
 import MainLayout from "./theme-components/main-layout";
+import Row from "./layout/row";
 import Section from "./section";
 import Service from "./service";
 import Services from "./services";
-import Slider from "./slider";
-import Subtitle from "./layout/subtitle";
-import { servicesMock } from "@/data/services";
-import Row from "./layout/row";
-import Column from "./layout/column";
-import BlockTitle from "./theme-components/block-title";
-import Skills from "./skills";
-import { codingSkills, designSkills } from "@/data/skills";
 import Skill from "./skill";
+import Skills from "./skills";
+import Subtitle from "./layout/subtitle";
+import { codingSkills, designSkills } from "@/data/skills";
+import { servicesMock } from "@/data/services";
+import HomeButtons from "./home-buttons";
 
 export default function Home() {
   const services = servicesMock;
@@ -42,15 +38,7 @@ export default function Home() {
           </p>
         </Section>
         <Section key="buttons">
-          <Button
-            type="primary"
-            onClick={() => {
-              console.log("Hola mundo");
-            }}
-          >
-            Download CV
-          </Button>
-          <Button type="secondary">Contact</Button>
+          <HomeButtons />
         </Section>
       </HomeTopSection>
       <Subtitle>
@@ -66,17 +54,6 @@ export default function Home() {
         ))}
       </Services>
 
-      {/* <Subtitle>
-        <h2>Clients</h2>
-      </Subtitle>
-
-      <Slider></Slider> */}
-
-      {/* <Subtitle>
-        <h2>Fun Facts</h2>
-      </Subtitle>
-
-      <Counters></Counters> */}
       <Row>
         <Column xs={12} sm={6}>
           <BlockTitle>

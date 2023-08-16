@@ -1,9 +1,10 @@
 import Button from "@/components/button";
 import Column from "@/components/layout/column";
+import MainLayout from "@/components/theme-components/main-layout";
+import Post from "@/components/theme-components/post";
 import Row from "@/components/layout/row";
 import StandardPage from "@/components/layout/standard-page";
-import BlogCard from "@/components/theme-components/blog-card";
-import MainLayout from "@/components/theme-components/main-layout";
+import { BlogMasonry } from "@/components/theme-components/blog-mansonry";
 import { blogPosts } from "@/data/posts";
 
 export default function Blog() {
@@ -12,11 +13,11 @@ export default function Blog() {
       <MainLayout title="Blog" subtitle="My Diary">
         <Row>
           <Column xs={12} sm={12}>
-            <div className="blog-masonry two-columns clearfix">
+            <BlogMasonry>
               {blogPosts.map((post, index) => (
-                <BlogCard key={index} {...post} />
+                <Post key={index} {...post} />
               ))}
-            </div>
+            </BlogMasonry>
 
             <Button type="primary">See All Posts</Button>
           </Column>

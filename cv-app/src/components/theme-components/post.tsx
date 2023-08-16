@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export interface BlogCardProps {
+export interface PostProps {
   category: string;
   postLink: string;
   imageUrl: string;
@@ -9,14 +9,14 @@ export interface BlogCardProps {
   title: string;
 }
 
-export default function BlogCard({
+export default function Post({
   category,
   postLink,
   imageUrl,
   imageAlt,
   date,
   title,
-}: BlogCardProps) {
+}: PostProps) {
   return (
     <div className="item">
       <div className="blog-card">
@@ -31,7 +31,7 @@ export default function BlogCard({
               src={imageUrl}
               alt={imageAlt}
               width={536}
-              height={251}
+              height={250}
               title=""
             />
             <div className="mask"></div>

@@ -4,14 +4,14 @@ import Column from "@/components/layout/column";
 import MainLayout from "@/components/theme-components/main-layout";
 import Row from "@/components/layout/row";
 import Skill from "@/components/skill";
+import Skills from "@/components/skills";
 import StandardPage from "@/components/layout/standard-page";
 import Timeline from "@/components/theme-components/timeline";
 import TimelineItem from "@/components/theme-components/time-line-item";
 import { certificateData } from "@/data/certificates";
+import { codingSkills, designSkills } from "@/data/skills";
 import { timelineItemsExperience } from "@/data/experience";
 import { timelineItemsStudies } from "@/data/studies";
-import { codingSkillsArray, designSkills } from "@/data/skills";
-import Skills from "@/components/skills";
 
 export default function Resume() {
   return (
@@ -99,7 +99,7 @@ export default function Resume() {
             </BlockTitle>
 
             <Skills>
-              {codingSkillsArray.map((skill, index) => (
+              {codingSkills.map((skill, index) => (
                 <Skill
                   key={index}
                   skillName={skill.skillName}

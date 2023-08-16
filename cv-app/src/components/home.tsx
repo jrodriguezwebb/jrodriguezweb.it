@@ -11,6 +11,12 @@ import Services from "./services";
 import Slider from "./slider";
 import Subtitle from "./layout/subtitle";
 import { servicesMock } from "@/data/services";
+import Row from "./layout/row";
+import Column from "./layout/column";
+import BlockTitle from "./theme-components/block-title";
+import Skills from "./skills";
+import { codingSkills, designSkills } from "@/data/skills";
+import Skill from "./skill";
 
 export default function Home() {
   const services = servicesMock;
@@ -60,17 +66,50 @@ export default function Home() {
         ))}
       </Services>
 
-      <Subtitle>
+      {/* <Subtitle>
         <h2>Clients</h2>
       </Subtitle>
 
-      <Slider></Slider>
+      <Slider></Slider> */}
 
-      <Subtitle>
+      {/* <Subtitle>
         <h2>Fun Facts</h2>
       </Subtitle>
 
-      <Counters></Counters>
+      <Counters></Counters> */}
+      <Row>
+        <Column xs={12} sm={6}>
+          <BlockTitle>
+            <h2>Design Skills</h2>
+          </BlockTitle>
+
+          <Skills>
+            {designSkills.map((skill, index) => (
+              <Skill
+                key={index}
+                skillName={skill.skillName}
+                skillValue={skill.skillValue}
+              />
+            ))}
+          </Skills>
+        </Column>
+
+        <Column xs={12} sm={6}>
+          <BlockTitle>
+            <h2>Coding Skills</h2>
+          </BlockTitle>
+
+          <Skills>
+            {codingSkills.map((skill, index) => (
+              <Skill
+                key={index}
+                skillName={skill.skillName}
+                skillValue={skill.skillValue}
+              />
+            ))}
+          </Skills>
+        </Column>
+      </Row>
     </MainLayout>
   );
 }

@@ -6,7 +6,7 @@ export const designSkills: Skill[] = [
     { skillName: "Backend Development", skillValue: 70 },
 ];
 
-export const codingSkillsArray = [
+export const codingSkills = [
     { skillName: "HTML / CSS", skillValue: 100 },
     { skillName: "PHP", skillValue: 90 },
     { skillName: "JavaScript", skillValue: 90 },

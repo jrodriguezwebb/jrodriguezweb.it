@@ -1,13 +1,17 @@
 import BlockTitle from "@/components/theme-components/block-title";
+import Certificate from "@/components/certificate";
 import Column from "@/components/layout/column";
-import Image from "next/image";
 import MainLayout from "@/components/theme-components/main-layout";
 import Row from "@/components/layout/row";
+import Skill from "@/components/skill";
 import StandardPage from "@/components/layout/standard-page";
 import Timeline from "@/components/theme-components/timeline";
 import TimelineItem from "@/components/theme-components/time-line-item";
-import { timelineItemsStudies } from "@/data/studies";
+import { certificateData } from "@/data/certificates";
 import { timelineItemsExperience } from "@/data/experience";
+import { timelineItemsStudies } from "@/data/studies";
+import { codingSkillsArray, designSkills } from "@/data/skills";
+import Skills from "@/components/skills";
 
 export default function Resume() {
   return (
@@ -53,194 +57,58 @@ export default function Resume() {
           </Column>
         </Row>
 
-        <div className="row">
-          <div className=" col-xs-12 col-sm-12 ">
-            <div className="p-20"></div>
+        <Column xs={12} sm={6}>
+          <BlockTitle>
+            <h2>Certificates</h2>
+          </BlockTitle>
+        </Column>
+        <Row>
+          {certificateData.map((certificate, index) => (
+            <Column key={index} xs={12} sm={6}>
+              <Certificate certificate={certificate} />
+            </Column>
+          ))}
+        </Row>
 
-            <div className="block-title">
-              <h2>Certificates</h2>
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className=" col-xs-12 col-sm-6 ">
-            <a
-              href="//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/1.jpg"
-              className="lightbox"
-            >
-              <div className="certificate-item clearfix">
-                <div className="certi-logo">
-                  <Image
-                    src="/images/clients/client-7.png"
-                    alt="logo"
-                    height={144} // Desired size with correct aspect ratio
-                    width={144} // Desired size with correct aspect ratio
-                  />
-                </div>
-
-                <div className="certi-content">
-                  <div className="certi-title">
-                    <h4>Psyhology of Intertnation Design</h4>
-                  </div>
-
-                  <div className="certi-id">
-                    <span>Membership ID: XXXX</span>
-                  </div>
-                  <div className="certi-date">
-                    <span>19 April 2018</span>
-                  </div>
-
-                  <div className="certi-company">
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div className=" col-xs-12 col-sm-6 ">
-            <a
-              href="//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/1.jpg"
-              className="lightbox"
-            >
-              <div className="certificate-item clearfix">
-                <div className="certi-logo">
-                  {/* <Image
-                      src="https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/client-1.png"
-                      alt="logo"
-                      height={144} // Desired size with correct aspect ratio
-                      width={144} // Desired size with correct aspect ratio
-                    /> */}
-                </div>
-
-                <div className="certi-content">
-                  <div className="certi-title">
-                    <h4>Psyhology of Intertnation Design</h4>
-                  </div>
-
-                  <div className="certi-id">
-                    <span>Membership ID: XXXX</span>
-                  </div>
-
-                  <div className="certi-date">
-                    <span>19 April 2018</span>
-                  </div>
-
-                  <div className="certi-company">
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className=" col-xs-12 col-sm-12 ">
+        <Row>
+          <Column xs={12} sm={6}>
             <div className="p-40"></div>
-          </div>
-        </div>
+          </Column>
+        </Row>
 
-        <div className="row">
-          <div className=" col-xs-12 col-sm-6 ">
-            <div className="block-title">
+        <Row>
+          <Column xs={12} sm={6}>
+            <BlockTitle>
               <h2>Design Skills</h2>
-            </div>
+            </BlockTitle>
 
-            <div id="skills_1" className="skills-info skills-first-style">
-              {/* <!-- Skill 1 --> */}
-              <div className="clearfix">
-                <h4>UI/UX Design</h4>
-                <div className="skill-value">95%</div>
-              </div>
+            <Skills>
+              {designSkills.map((skill, index) => (
+                <Skill
+                  key={index}
+                  skillName={skill.skillName}
+                  skillValue={skill.skillValue}
+                />
+              ))}
+            </Skills>
+          </Column>
 
-              <div id="skill_1" data-value="95" className="skill-container">
-                <div className="skill-percentage"></div>
-              </div>
-              {/*  <!-- /Skill 1 --> */}
-
-              {/* <!-- Skill 2 --> */}
-              <div className="clearfix">
-                <h4>Print Design</h4>
-                <div className="skill-value">75%</div>
-              </div>
-
-              <div id="skill_2" data-value="75" className="skill-container">
-                <div className="skill-percentage"></div>
-              </div>
-              {/* <!-- /Skill 2 --> */}
-
-              {/* <!-- Skill 3 --> */}
-              <div className="clearfix">
-                <h4>Graphic Design</h4>
-                <div className="skill-value">85%</div>
-              </div>
-              <div id="skill_3" data-value="85" className="skill-container">
-                <div className="skill-percentage"></div>
-              </div>
-              {/* <!-- Skill 3 --> */}
-
-              {/* <!-- Skill 4 --> */}
-              <div className="clearfix">
-                <h4>Logo Design</h4>
-                <div className="skill-value">90%</div>
-              </div>
-              <div id="skill_4" data-value="90" className="skill-container">
-                <div className="skill-percentage"></div>
-              </div>
-              {/* <!-- /Skill 4 --> */}
-            </div>
-          </div>
-
-          <div className=" col-xs-12 col-sm-6 ">
-            <div className="block-title">
+          <Column xs={12} sm={6}>
+            <BlockTitle>
               <h2>Coding Skills</h2>
-            </div>
+            </BlockTitle>
 
-            <div id="skills_2" className="skills-info skills-first-style">
-              {/* <!-- Skill 5 --> */}
-              <div className="clearfix">
-                <h4>HTML / CSS</h4>
-                <div className="skill-value">100%</div>
-              </div>
-              <div id="skill_5" data-value="100" className="skill-container">
-                <div className="skill-percentage"></div>
-              </div>
-              {/* <!-- /Skill 5 --> */}
-
-              {/* <!-- Skill 6 --> */}
-              <div className="clearfix">
-                <h4>PHP</h4>
-                <div className="skill-value">90%</div>
-              </div>
-              <div id="skill_6" data-value="90" className="skill-container">
-                <div className="skill-percentage"></div>
-              </div>
-              {/* <!-- /Skill 6 --> */}
-
-              {/* <!-- Skill 7 --> */}
-              <div className="clearfix">
-                <h4>JavaScript</h4>
-                <div className="skill-value">90%</div>
-              </div>
-              <div id="skill_7" data-value="90" className="skill-container">
-                <div className="skill-percentage"></div>
-              </div>
-              {/* <!-- /Skill 7 --> */}
-
-              {/* <!-- Skill 8 --> */}
-              <div className="clearfix">
-                <h4>Smarty / Twig</h4>
-                <div className="skill-value">85%</div>
-              </div>
-              <div id="skill_8" data-value="85" className="skill-container">
-                <div className="skill-percentage"></div>
-              </div>
-              {/* <!-- /Skill 8 --> */}
-            </div>
-          </div>
-        </div>
+            <Skills>
+              {codingSkillsArray.map((skill, index) => (
+                <Skill
+                  key={index}
+                  skillName={skill.skillName}
+                  skillValue={skill.skillValue}
+                />
+              ))}
+            </Skills>
+          </Column>
+        </Row>
       </MainLayout>
     </StandardPage>
   );

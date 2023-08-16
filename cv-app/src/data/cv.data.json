@@ -1,0 +1,441 @@
+{
+  "name": "Jesús Alfredo Rodríguez Pérez",
+  "location": "UK",
+  "phoneNumbers": [],
+  "emails": ["jesus@factorydevs.com", "jesus.jarp@gmail.com"],
+  "linkedin": "https://www.linkedin.com/in/jrodriguezweb",
+  "github": "https://github.com/jrodriguezwebb",
+  "goals": "Grow in my professional career using cutting edge technologies.",
+  "specialties": {
+    "webTechnologies": [
+      "Typescript",
+      "JavaScript",
+      "Angular 12+",
+      "NodeJS",
+      "NestJS",
+      "Ionic4/5",
+      "AngularJS",
+      "PHP",
+      "HTML5/XHTML",
+      "CSS3",
+      "Ajax",
+      "JQuery",
+      "Symfony"
+    ],
+    "otherTechnologies": ["WebRTC", "React", "Svelte", "Python"],
+    "ides": ["Netbeans", "Visual Studio Code"],
+    "versionControlSystem": ["Github", "Bitbucket (Gitflow Methodology)"],
+    "webServers": ["WAMP", "XAMPP", "LAMP"],
+    "databases": {
+      "dbDesign": "Workbench",
+      "databasesList": ["MySQL", "PostgreSQL", "MSSQL", "MongoDB", "Oracle"]
+    },
+    "design": "Adobe Suite (Dreamweaver, Photoshop, Illustrator), Corel Draw",
+    "infrastructure": [
+      "Linux Ubuntu",
+      "MacOS",
+      "AWS",
+      "Azure",
+      "VPS",
+      "Windows Server 2012"
+    ],
+    "developmentMethodologies": ["SCRUM", "KANBAN"],
+    "languages": ["English", "Spanish"]
+  },
+  "workExperience": [
+    {
+      "period": "May-2022 / Current",
+      "position": "NodeJS Engineer",
+      "client": "Important Healthcare client. (France-remote)",
+      "tasks": [
+        "Scalable Back-End development with NodeJS, JavaScript, TypeScript.",
+        "Frontend maintenance to React Application - Unit testing with JEST",
+        "Automatization with AutoIT and Autohotkey. - Event tracking with New Relic.",
+        "Code quality assurance and good practices, clean code.",
+        "Connections with MSSQL and Postgres.",
+        "Application Deployment using continue integration tools and pipelines in Azure devops.",
+        "Agile Development with SCRUM in Azure devops.",
+        "Meetings in English with Product Owner.",
+        "Software version control with GIT, using Git Flow as methodology."
+      ]
+    },
+    {
+      "period": "dec-2022 / may-2022",
+      "position": "Senior JavaScript Engineer",
+      "client": "Important global tyres client. (London-remote)",
+      "tasks": [
+        "Scalable Front-End development with Angular 12+, JavaScript, TypeScript, NgRx, RxJS, NX for monorepo architecture.",
+        "Mobile development using Ionic 5 and Cordova.",
+        "Integration of pressure sensors into the mobile app using serial port.",
+        "Code quality assurance and good practices, clean code, and facade architecture.",
+        "Application Deployment using continue integration tools and pipelines in Azure devops.",
+        "Agile Development with SCRUM in Azure devops.",
+        "Software version control with GIT, using Git Flow as methodology."
+      ]
+    },
+    {
+      "period": "jan-2019 / jan-2022",
+      "position": "Senior Front-End Developer",
+      "company": "Cognizant Technologies (SPAIN)",
+      "tasks": [
+        "Front-End scalable development with AngularJS, Angular 2+ (2...12), Javascript, TypeScript, Grunt y SASS.",
+        "Mobile development using Ionic 3, 4.",
+        "Unit Testing using Karma/Jasmine.",
+        "Code Quality Assurance with SonarQube, and good practices.",
+        "Application Deployment using continue integration tools (Jenkins).",
+        "Agile Development with SCRUM in JIRA.",
+        "Meetings in English with Product Owner.",
+        "Software version control with GIT, using Git Flow as methodology.",
+        "Rest API development with NodeJS, NestJS, Docker and Nginx."
+      ]
+    },
+    {
+      "period": "may-2018 / jan-2019",
+      "position": "Senior Front-End Developer",
+      "company": "Hiberus Tecnología, S. L. (SPAIN)",
+      "tasks": [
+        "Frontend scalable development using Angular6.",
+        "Implementation Flux/Redux pattern in client side applications (ngrx).",
+        "Angular Performance optimization with Lazy loading, and good practices.",
+        "Unit Testing using Karma/Jasmine.",
+        "Code Quality Assurance with SonarQube, and good practices.",
+        "Functional Analysis and Agile Development with SCRUM in JIRA.",
+        "Debug and issues solving.",
+        "Application Deploy using continue integration tools (Jenkins).",
+        "Web development using AngularJS, Grunt, SASS, Proteo.",
+        "Data Mockups with NodeJS.",
+        "Meetings in English with Product Owner and team members.",
+        "Software version control with GIT, using Git Flow as methodology."
+      ]
+    },
+    {
+      "period": "jul-2017 / feb-2017",
+      "position": "Senior Developer",
+      "company": "TUYÚ Technology SL. (SPAIN)",
+      "tasks": [
+        "Knowledge and experience in programming languages and tools that facilitate the construction of programs.",
+        "Application of standard methodologies in programming.",
+        "Supervises and elaborates program details, evaluates and analyzes changes.",
+        "Know the logical environment of the project.",
+        "Analysis and technical design of application modules.",
+        "Construction of new modules and modification of existing ones for the different developments of the project.",
+        "Unit and functional tests of the different projects and their documentation"
+      ]
+    },
+    {
+      "period": "aug-2016 / jul-2017",
+      "position": "Technical Manager, Full-Stack Web Developer",
+      "clients": "Enjoysoft Consulting, S. L. U. Offing Web Solutions SL.",
+      "tasks": [
+        "Mobile development using Ionic 3. With deploys to PlayStore and AppStore.",
+        "Development using Angular2 in Front-end and Symfony3 for APIs RestFul Development (Back-end).",
+        "Several collaborations in many projects using technologies like (HTML5, CSS3, Bootstrap4, JQuery, Ajax, Javasript, MySQL, IndexedDB, LocalStorage, Web workers, RecordRTC, PHP) and HTML5 APIS.",
+        "Implementing realtime video technologies like ( WebRTC, NodeJS, RecordRTC)",
+        "Set up VPS using Linux Ubuntu Server (Sysadmin). - Project Management and People management.",
+        "Setting up LAMP and NodeJS environments. - Installing SSL Certificates.",
+        "Setting up DNS Bind9 service - Setting up mail service.- Shell Scripting."
+      ]
+    },
+    {
+      "period": "oct-2008 / 2018",
+      "position": "Founder",
+      "company": "JRSoluciones.net (VENEZUELA/SPAIN)",
+      "tasks": [
+        "Management, Customers negotiation, Project Leader, Web developer, Infrastructure and networking analyst, SysAdmin Windows / Linux, In a company dedicated to web development and also Hosting, Domain, and infrastructure solutions."
+      ]
+    },
+    {
+      "period": "jul-2014 / feb-2015",
+      "position": "System Analyst",
+      "company": "Barwil de Venezuela C.A., Wilhelmsen Ship Services (WSS). (VENEZUELA)",
+      "tasks": [
+        "Domain Network Management. Active Directory with Windows Server.",
+        "Network design using CISCO methodology. TCP/IP, VoIP.",
+        "User’s policies implementation for usage and information storing. GPO, NASS.",
+        "Rack and networks set up.",
+        "Advise to management.",
+        "Installation and maintenance of information systems.",
+        "Corrective and preventive maintenance to computer equipment.",
+        "User Technical Support. Network Devices Configuration ( Printers, Routers, NATs).",
+        "Mail server configuration with Outlook server. - Mail clients configuration.",
+        "Mail server setup in ubuntu server (Linux).",
+        "DNS with Bind9 (Linux).",
+        "Webservers with apache (Linux and Windows).",
+        "Database management with MSSQL, and MySQL."
+      ]
+    },
+    {
+      "period": "jul-2011 / jul-2014",
+      "position": "System Manager",
+      "company": "Jardines Campos de Paz, C.A. (VENEZUELA)",
+      "tasks": [
+        "Developed New procedures for requirements gathering, testing, scripting and documentation.",
+        "Strengthen quality in the system performance .",
+        "Recognize problems.",
+        "Translate problems into system requirements and propose new solutions to problems.",
+        "Database Model.",
+        "Develop modules of the management system (CRM) using HTML, JavaScript, CSS and PHP and other web technologies.",
+        "Error debugging.",
+        "Coordinate, monitor, plan and control the System development.",
+        "Structured cabling. Networking TCP/IP, VoIP, firewalls.",
+        "Services configuration Windows server, Active directory, GPO."
+      ]
+    },
+    {
+      "period": "apr-2010 / jul-2011",
+      "position": "System Analyst",
+      "company": "Logipuertos, C.A. (VENEZUELA)",
+      "tasks": [
+        "User technical support.",
+        "Installation of information systems.",
+        "Structured cabling. Networking TCP/IP, VoIP, firewalls.",
+        "Services configuration Windows server, Active directory, GPO.",
+        "Installation, configuration and software update (Operating Systems, Anti-virus, Office).",
+        "Information Backup.",
+        "Maintenance of information systems."
+      ]
+    },
+    {
+      "period": "apr-2007 / apr-2008",
+      "position": "Internal",
+      "company": "Equipos del Centro, C.A. (VENEZUELA)",
+      "tasks": [
+        "Heavy machinery company dedicated to containers lifting. Administrative assistant: HR Auxiliary , Payroll, Sales and accounting."
+      ]
+    }
+  ],
+  "educationAndCredentials": [
+    {
+      "period": "April 2012",
+      "career": "Computing Engineering Degree",
+      "institution": "University José Antonio Páez. Venezuela (Stand by)"
+    },
+    {
+      "period": "November 2013 / 2016",
+      "title": "Electronic Technical Engineer",
+      "institution": "University Institute of Technology Juan Pablo Pérez Alfonzo (I. U. T. E. P. A. L.) Venezuela"
+    },
+    {
+      "period": "June 2007 / June 2010",
+      "title": "Computer Technical Engineer",
+      "institution": "University Institute of Technology Juan Pablo Pérez Alfonzo (I. U. T. E. P. A. L.) Venezuela"
+    }
+  ],
+  "personalProjects": [
+    {
+      "name": "Development of a social network platform for videocalling between professionals and users.",
+      "technologiesUsed": [
+        "HTML5",
+        "CSS3",
+        "JS",
+        "JQuery",
+        "Bootstrap",
+        "PHP",
+        "MySQL",
+        "Angular2",
+        "Symfony",
+        "NodeJS",
+        "WebRTC",
+        "IndexedDB",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "News website www.venprensa.com",
+      "technologiesUsed": [
+        "HTML4.1",
+        "CSS2",
+        "JS",
+        "JQuery",
+        "Wordpress",
+        "PHP",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Sistema Administrativo de Cementerio (SIAC) - Founder, Project Leader, developer.",
+      "description": "SIAC is a CRM that integrates various solutions for a company, including sales, debt collection, HR, payroll, expenses, reporting, help-desk, etc.",
+      "technologiesUsed": ["HTML5", "CSS3", "JS", "JQuery", "PHP", "MySQL"]
+    },
+    {
+      "name": "Website integrated with SIAC System for retrieving information and customer support.",
+      "url": "www.jardinescamposdepaz.com",
+      "technologiesUsed": ["HTML4", "CSS2", "JS", "JQuery", "PHP", "MySQL"]
+    },
+    {
+      "name": "News website for municipal council in Puerto Cabello - www.concejomunicipalpc.org.ve",
+      "technologiesUsed": [
+        "HTML5",
+        "CSS3",
+        "Responsive Design",
+        "JS",
+        "JQuery",
+        "Wordpress",
+        "PHP",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "News website www.informe360.com.ve",
+      "technologiesUsed": [
+        "HTML5",
+        "CSS3",
+        "JS",
+        "JQuery",
+        "Wordpress",
+        "PHP",
+        "MySQL"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "name": "REDUX en Angular con NGRX",
+      "academicHours": "13,5",
+      "provider": "Udemy.com",
+      "professor": "Fernando Herrera",
+      "year": "2019"
+    },
+    {
+      "name": "Angular Architecture and Best Practices",
+      "academicHours": "5,5",
+      "provider": "Pluralsight.com",
+      "professor": "Dan Wahlin",
+      "year": "2019"
+    },
+    {
+      "name": "Angular Best Practices",
+      "academicHours": "1,5",
+      "provider": "Pluralsight.com",
+      "professor": "Jim Cooper",
+      "year": "2018"
+    },
+    {
+      "name": "Javascript: ECMA Script 6 (ES6)",
+      "academicHours": "5",
+      "provider": "Udemy.com",
+      "professor": "Fernando Herrera",
+      "year": "2018"
+    },
+    {
+      "name": "Testing Angular 4",
+      "academicHours": "2",
+      "provider": "Udemy.com",
+      "professor": "Mosh Hamedani",
+      "year": "2018"
+    },
+    {
+      "name": "Angular Universal",
+      "academicHours": "2,5",
+      "provider": "Udemy.com",
+      "professor": "Angular University",
+      "year": "2018"
+    },
+    {
+      "name": "Angular y NodeJS en producción – Configurar un servidor VPS",
+      "academicHours": "2",
+      "provider": "Udemy.com",
+      "professor": "Victor Robles",
+      "year": "2018"
+    },
+    {
+      "name": "Angular 4 – Desde cero hasta profesional",
+      "academicHours": "12",
+      "provider": "Udemy.com",
+      "professor": "Victor Robles",
+      "year": "2018"
+    },
+    {
+      "name": "Mobile Hybrid development with Apache Cordova",
+      "academicHours": "48",
+      "provider": "Centro de Tecnologías Avanzadas (Zaragoza)",
+      "year": "2018"
+    },
+    {
+      "name": "Angular JS",
+      "academicHours": "4",
+      "provider": "Udemy.com",
+      "professor": "Jonathan Cifuentes",
+      "year": "2017"
+    },
+    {
+      "name": "Web Development with JavaScript, Angular 5, Express, NodeJS & MongoDB",
+      "academicHours": "15",
+      "provider": "Udemy.com",
+      "professor": "Víctor Robles",
+      "year": "2017"
+    },
+    {
+      "name": "Mobile develop with Ionic 2 & Angular 2",
+      "academicHours": "40",
+      "provider": "Centro de Tecnologías Avanzadas (Zaragoza)",
+      "year": "2017"
+    },
+    {
+      "name": "OCA DBA - Managing Oracle 12c Databases",
+      "academicHours": "90",
+      "provider": "Centro de Tecnologías Avanzadas (Zaragoza)",
+      "year": "2017"
+    },
+    {
+      "name": "Full-stack web development with Symfony3 & Angular2",
+      "academicHours": "18",
+      "provider": "Udemy.com",
+      "professor": "Victor Robles",
+      "year": "2016"
+    },
+    {
+      "name": "Angular2",
+      "academicHours": "12,5",
+      "provider": "Udemy.com",
+      "professor": "Victor Robles",
+      "year": "2016"
+    },
+    {
+      "name": "TypeScript",
+      "academicHours": "2",
+      "provider": "Udemy.com",
+      "professor": "Victor Robles",
+      "year": "2016"
+    },
+    {
+      "name": "Symfony3",
+      "academicHours": "12",
+      "provider": "Udemy.com",
+      "professor": "Victor Robles",
+      "year": "2016"
+    },
+    {
+      "name": "REDES CISCO CCNA Modules 1 & 2",
+      "academicHours": "140",
+      "provider": "Academia FUNDACID, Universidad de Carabobo",
+      "year": "2014"
+    },
+    {
+      "name": "Websites with HTML5 y CSS3",
+      "academicHours": "16",
+      "provider": "Maedca",
+      "year": "2012"
+    },
+    {
+      "name": "Graphic Design (Photoshop, Illustrator, Corel Draw Flash)",
+      "academicHours": "64",
+      "provider": "Academia AR Sistema",
+      "year": "2011"
+    }
+  ],
+  "workSkills": [
+    "Warehousing and merchandise transport.",
+    "Administrative Assistant",
+    "Technical assistant in computer maintenance"
+  ],
+  "languages": {
+    "Spanish": "Native",
+    "English": {
+      "speak": "Advanced",
+      "read": "Advanced",
+      "write": "Advanced"
+    }
+  },
+  "availability": "negotiable"
+}

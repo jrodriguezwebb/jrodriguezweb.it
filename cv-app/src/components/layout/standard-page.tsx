@@ -5,6 +5,7 @@ import PageScrollLayout from "@/components/theme-components/page-scroll-layout";
 import ScrollToTop from "@/components/theme-components/scroll-to-top";
 import AnimatedBg from "../theme-components/animated-bg";
 import Footer from "./footer";
+import Preload from "../theme-components/preload";
 
 export default function StandardPage({
   children,
@@ -17,9 +18,9 @@ export default function StandardPage({
         <title>jrodriguezweb.it</title>
       </Head>
 
+      <Preload></Preload>
       <AnimatedBg></AnimatedBg>
 
-      {/* <Preload></Preload> */}
       <ScrollToTop></ScrollToTop>
 
       <PageScrollLayout>

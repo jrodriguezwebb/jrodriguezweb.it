@@ -20,3 +20,12 @@ export function animateLayout($: any) {
     animatedContainer.removeClass("transform3d");
   }, 1000);
 }
+
+export function jqueryScrollToTop($: any) {
+  $("body,html").animate(
+    {
+      scrollTop: 0,
+    },
+    400
+  );
+}

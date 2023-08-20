@@ -29,3 +29,9 @@ export function jqueryScrollToTop($: any) {
     400
   );
 }
+
+export function openMenuJquery($: any) {
+  // Mobile menu
+  $(".site-nav").addClass("animate");
+  $(".site-nav").toggleClass("mobile-menu-hide");
+}

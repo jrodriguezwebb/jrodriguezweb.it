@@ -30,9 +30,9 @@ export default function Post({
             <Image
               src={imageUrl}
               alt={imageAlt}
-              width={536}
+              width={530}
               height={250}
-              title=""
+              title="asdasd"
             />
             <div className="mask"></div>
           </a>

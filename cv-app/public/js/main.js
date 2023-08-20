@@ -279,10 +279,10 @@ function animateLayout() {
     });
 
     // Mobile menu
-    $(".menu-toggle").on("click", function () {
+    /* $(".menu-toggle").on("click", function () {
       $(".site-nav").addClass("animate");
       $(".site-nav").toggleClass("mobile-menu-hide");
-    });
+    }); */
 
     // Text rotation
     $(".text-rotation").owlCarousel({

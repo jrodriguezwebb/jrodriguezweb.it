@@ -11,21 +11,19 @@ import Skill from "./skill";
 import Skills from "./skills";
 import Subtitle from "./layout/subtitle";
 import { codingSkills, designSkills } from "@/data/skills";
-import { servicesMock } from "@/data/services";
+import { servicesMock, servicesMock2 } from "@/data/services";
 import HomeButtons from "./home-buttons";
 
 export default function Home() {
   const services = servicesMock;
+  const services2 = servicesMock2;
 
   return (
     <MainLayout>
       <HomeTopSection>
         <Section key="specialities">
           <Item>
-            <h4>Frontend-developer</h4>
-          </Item>
-          <Item>
-            <h4>Backend-developer</h4>
+            <h4>Fullstack-developer - Frontend / Backend</h4>
           </Item>
         </Section>
         <Section key="description">
@@ -51,15 +49,28 @@ export default function Home() {
       <Subtitle>
         <h2>What I Do</h2>
       </Subtitle>
-      <Services>
-        {/* Iterating services */}
-        {services.map((service, i) => (
-          <Service key={i} icon={service.icon}>
-            <h4>{service.title}</h4>
-            <p>{service.description}</p>
-          </Service>
-        ))}
-      </Services>
+      <Row>
+        <Column xs={12} sm={6}>
+          <Services>
+            {services.map((service, i) => (
+              <Service key={i} icon={service.icon}>
+                <h4>{service.title}</h4>
+                <p>{service.description}</p>
+              </Service>
+            ))}
+          </Services>
+        </Column>
+        <Column xs={12} sm={6}>
+          <Services>
+            {services2.map((service, i) => (
+              <Service key={i} icon={service.icon}>
+                <h4>{service.title}</h4>
+                <p>{service.description}</p>
+              </Service>
+            ))}
+          </Services>
+        </Column>
+      </Row>
 
       <Row>
         <Column xs={12} sm={6}>

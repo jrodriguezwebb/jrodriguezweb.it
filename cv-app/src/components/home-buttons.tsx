@@ -12,7 +12,9 @@ export default function HomeButtons() {
       >
         Download CV
       </Button>
-      <Button type="secondary">Contact</Button>
+      <Button href="/contact" type="secondary">
+        Contact
+      </Button>
     </>
   );
 }

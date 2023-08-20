@@ -25,8 +25,8 @@ export default function HomeTopSectionLayout(props: React.PropsWithChildren) {
                   <Image
                     alt="mainPhoto"
                     src="/images/main_photo.jpg"
-                    width={350}
-                    height={350}
+                    width={400}
+                    height={400}
                   ></Image>
                 </div>
               </div>

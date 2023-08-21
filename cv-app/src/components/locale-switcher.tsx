@@ -1,11 +1,17 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { redirect, usePathname, useRouter } from "next/navigation";
 import { i18n } from "@/app/i18n-config";
+import { ChangeEvent } from "react";
+
+export const generateStaticParams = async () => {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+};
 
 export default function LocaleSwitcher() {
+  const router = useRouter();
   const pathName = usePathname();
+  console.log(pathName);
   const redirectedPathName = (locale: string) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
@@ -13,18 +19,23 @@ export default function LocaleSwitcher() {
     return segments.join("/");
   };
 
+  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const locale = event.target.value;
+    const path = redirectedPathName(locale);
+    router.push(path);
+  };
+
   return (
     <div>
-      <p>Locale switcher:</p>
-      <ul>
+      <select onChange={handleChange}>
         {i18n.locales.map((locale) => {
           return (
-            <li key={locale}>
-              <Link href={redirectedPathName(locale)}>{locale}</Link>
-            </li>
+            <option value={locale} key={locale}>
+              {locale}
+            </option>
           );
         })}
-      </ul>
+      </select>
     </div>
   );
 }

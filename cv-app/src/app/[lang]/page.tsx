@@ -12,8 +12,6 @@ export default async function IndexWithI18nPage({
   const dictionary = await getDictionary(lang);
   return (
     <StandardPage>
-      <LocaleSwitcher />
-      <p>Current locale: {lang}</p>
       <Home></Home>
     </StandardPage>
   );

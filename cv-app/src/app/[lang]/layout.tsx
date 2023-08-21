@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
-import "./globals.scss";
+import "../globals.scss";
 import type { Metadata } from "next";
 import ThemeScripts from "@/components/theme-components/theme-scripts";
-import { i18n } from "./i18n-config";
+import { i18n } from "../i18n-config";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +18,13 @@ export async function generateStaticParams() {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { lang: string };
 }) {
   return (
-    <html lang="es">
+    <html lang={params.lang}>
       <ThemeScripts></ThemeScripts>
       <body className={inter.className + " page"}>{children}</body>
     </html>

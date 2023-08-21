@@ -1,10 +1,5 @@
-import Home from "@/components/home";
-import StandardPage from "@/components/layout/standard-page";
+import { redirect } from "next/navigation";
 
-export default function CvApp() {
-  return (
-    <StandardPage>
-      <Home></Home>
-    </StandardPage>
-  );
+export default async function IndexPage() {
+  redirect("/es");
 }

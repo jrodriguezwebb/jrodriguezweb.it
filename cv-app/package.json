@@ -9,14 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.4.10",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "18.2.7",
+    "@formatjs/intl-localematcher": "^0.4.0",
     "autoprefixer": "10.4.15",
     "bootstrap": "^4.4.1",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.13",
     "jquery": "^3.7.0",
+    "negotiator": "^0.6.3",
     "next": "13.4.13",
     "postcss": "8.4.27",
     "react": "18.2.0",
@@ -24,9 +23,14 @@
     "react-dom": "18.2.0",
     "sass": "^1.65.1",
     "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "server-only": "0.0.1"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.16"
+    "@types/node": "20.4.10",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "@types/jquery": "^3.5.16",
+    "@types/negotiator": "^0.6.1",
+    "typescript": "5.1.6"
   }
 }

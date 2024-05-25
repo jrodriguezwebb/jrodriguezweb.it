@@ -1,6 +1,6 @@
 "use client";
 
-import { redirect, usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { i18n } from "@/app/i18n-config";
 import { ChangeEvent } from "react";
 

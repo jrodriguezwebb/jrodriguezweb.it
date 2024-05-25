@@ -5,6 +5,7 @@ import { menuOptions } from "@/data/menuOptions";
 import LocaleSwitcher from "../locale-switcher";
 
 export default function Navigation() {
+  
   return (
     <NavigationLayout>
       {menuOptions.map((menuOption, i) => (

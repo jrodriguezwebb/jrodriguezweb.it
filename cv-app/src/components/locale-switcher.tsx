@@ -11,8 +11,8 @@ export default function LocaleSwitcher() {
 
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const locale = event.target.value;
-    setLanguageSelected(locale);
     const noLocalizedPath = pathName.split('/').slice(2).join('/');
+    setLanguageSelected(locale);
     router.push(`/${locale}/${noLocalizedPath}`);
   };
 

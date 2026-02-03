@@ -1,11 +1,32 @@
+"use client";
+
+import { FormEvent } from "react";
+
 const ContactForm: React.FC = () => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = (formData.get("name") as string) || "";
+    const email = (formData.get("email") as string) || "";
+    const subject = (formData.get("subject") as string) || "";
+    const message = (formData.get("message") as string) || "";
+
+    const mailtoSubject = encodeURIComponent(subject || "Contact from website");
+    const bodyLines = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      "",
+      message,
+    ];
+    const mailtoBody = encodeURIComponent(bodyLines.join("\n"));
+
+    const mailtoUrl = `mailto:jesus.jarp@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+    window.open(mailtoUrl, "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <form
-      id="contact_form"
-      className="contact-form"
-      action="contact_form/contact_form.php"
-      method="post"
-    >
+    <form id="contact_form_mailto" className="contact-form" onSubmit={handleSubmit}>
       <div className="messages"></div>
 
       <div className="controls two-columns">
@@ -41,7 +62,7 @@ const ContactForm: React.FC = () => {
 
             <div className="form-group form-group-with-icon">
               <input
-                id="form_name"
+                id="form_subject"
                 type="text"
                 name="subject"
                 className="form-control"
@@ -70,15 +91,9 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
 
-        <div
-          className="g-recaptcha"
-          data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"
-          data-theme="dark"
-        ></div>
-
         <input
           type="submit"
-          className="button btn-send disabled"
+          className="button btn-send"
           value="Send message"
         />
       </div>

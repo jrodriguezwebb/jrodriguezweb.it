@@ -15,26 +15,21 @@ export default function Contact() {
           <Column xs={12} sm={4}>
             <InfoList>
               <InfoBlock
-                iconClass="linecons linecons-phone"
-                title="415-832-2000"
-                text="Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui."
-              />
-              <InfoBlock
                 iconClass="linecons linecons-location"
-                title="San Francisco"
-                text="Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui."
+                title="Valladolid, Spain"
+                text="Available for remote projects across Europe."
               />
               <InfoBlock
                 iconClass="linecons linecons-mail"
-                title="hello@example.com"
-                text="Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui."
+                title="jesus.jarp@gmail.com"
+                text="Let's stay connected! Feel free to reach out via email."
               />
             </InfoList>
           </Column>
 
           <Column xs={12} sm={8}>
             <BlockTitle>
-              <h2>How Can I Help You?</h2>
+              <h2>Let&apos;s talk!</h2>
             </BlockTitle>
 
             <ContactForm />

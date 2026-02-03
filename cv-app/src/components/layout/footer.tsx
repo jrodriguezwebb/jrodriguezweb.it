@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-copyrights">
-        <p>© 2023 All rights reserved. jrodriguezweb.it</p>
+        <p>© 2026 All rights reserved. jrodriguezweb.it</p>
       </div>
     </footer>
   );

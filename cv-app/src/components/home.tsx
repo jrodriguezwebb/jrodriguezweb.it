@@ -75,11 +75,11 @@ export default function Home() {
       <Row>
         <Column xs={12} sm={6}>
           <BlockTitle>
-            <h2>Design Skills</h2>
+            <h2>Backend Skills</h2>
           </BlockTitle>
 
           <Skills>
-            {designSkills.map((skill, index) => (
+            {codingSkills.map((skill, index) => (
               <Skill
                 key={index}
                 skillName={skill.skillName}
@@ -91,11 +91,11 @@ export default function Home() {
 
         <Column xs={12} sm={6}>
           <BlockTitle>
-            <h2>Coding Skills</h2>
+            <h2>Frontend Skills</h2>
           </BlockTitle>
 
           <Skills>
-            {codingSkills.map((skill, index) => (
+            {designSkills.map((skill, index) => (
               <Skill
                 key={index}
                 skillName={skill.skillName}

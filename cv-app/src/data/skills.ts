@@ -1,14 +1,21 @@
 import { Skill } from "@/models/skill.model";
 
-export const designSkills: Skill[] = [
-    { skillName: "UI/UX Design", skillValue: 95 },
-    { skillName: "Frontend Development", skillValue: 80 },
-    { skillName: "Backend Development", skillValue: 70 },
+// Backend Skills
+export const codingSkills: Skill[] = [
+    { skillName: "NodeJS / NestJS", skillValue: 90 },
+    { skillName: "TypeScript / JavaScript", skillValue: 95 },
+    { skillName: "MongoDB / PostgreSQL", skillValue: 85 },
+    { skillName: "REST APIs / Microservices", skillValue: 90 },
+    { skillName: "Azure / AWS", skillValue: 80 },
+    { skillName: "Docker / Kubernetes", skillValue: 75 },
 ];
 
-export const codingSkills = [
-    { skillName: "HTML / CSS", skillValue: 100 },
-    { skillName: "PHP", skillValue: 90 },
-    { skillName: "JavaScript", skillValue: 90 },
-    { skillName: "Smarty / Twig", skillValue: 85 },
+// Frontend Skills
+export const designSkills: Skill[] = [
+    { skillName: "Angular / NgRx", skillValue: 95 },
+    { skillName: "React / Next.js", skillValue: 85 },
+    { skillName: "TypeScript / JavaScript", skillValue: 95 },
+    { skillName: "HTML5 / CSS3 / SASS", skillValue: 95 },
+    { skillName: "Responsive Design", skillValue: 90 },
+    { skillName: "State Management", skillValue: 90 },
 ];

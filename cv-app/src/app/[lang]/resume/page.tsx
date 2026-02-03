@@ -20,11 +20,11 @@ export default function Resume() {
         <Row>
           <Column xs={12} sm={6}>
             <BlockTitle>
-              <h2>Education</h2>
+              <h2>Experience</h2>
             </BlockTitle>
 
             <Timeline>
-              {timelineItemsStudies.map((item, index) => (
+              {timelineItemsExperience.map((item, index) => (
                 <TimelineItem
                   key={index}
                   period={item.period}
@@ -39,11 +39,11 @@ export default function Resume() {
 
           <Column xs={12} sm={6}>
             <BlockTitle>
-              <h2>Experience</h2>
+              <h2>Education</h2>
             </BlockTitle>
 
             <Timeline>
-              {timelineItemsExperience.map((item, index) => (
+              {timelineItemsStudies.map((item, index) => (
                 <TimelineItem
                   key={index}
                   period={item.period}

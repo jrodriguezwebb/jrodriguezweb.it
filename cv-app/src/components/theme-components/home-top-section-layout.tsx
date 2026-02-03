@@ -24,9 +24,9 @@ export default function HomeTopSectionLayout(props: React.PropsWithChildren) {
                 <div className="hp-inner">
                   <Image
                     alt="mainPhoto"
-                    src="/images/main_photo.jpg"
-                    width={400}
-                    height={400}
+                    src="/images/foto_jesus.jpeg"
+                    width={867}
+                    height={996}
                   ></Image>
                 </div>
               </div>

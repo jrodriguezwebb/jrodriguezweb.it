@@ -30,9 +30,8 @@ export default function HomeButtons() {
     <>
       <Button
         type="primary"
-        onClick={() => {
-          console.log("Hola mundo");
-        }}
+        href="/images/CV-Jesus-Rodriguez28-10.pdf"
+        target="_blank"
       >
         Download CV
       </Button>

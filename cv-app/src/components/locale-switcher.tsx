@@ -7,19 +7,36 @@ import { ChangeEvent, useEffect, useState } from "react";
 export default function LocaleSwitcher() {
   const router = useRouter();
   const pathName = usePathname();
-  const [languageSelected, setLanguageSelected] = useState('')
+  const [languageSelected, setLanguageSelected] = useState("");
+
+  const buildLocalizedPath = (locale: string) => {
+    const segments = pathName.split("/").filter(Boolean);
+    const hasLocale = i18n.locales.includes(segments[0] as typeof i18n.locales[number]);
+    const rest = hasLocale ? segments.slice(1) : segments;
+    const suffix = rest.length ? `/${rest.join("/")}` : "";
+    return `/${locale}${suffix}`;
+  };
 
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const locale = event.target.value;
-    const noLocalizedPath = pathName.split('/').slice(2).join('/');
     setLanguageSelected(locale);
-    router.push(`/${locale}/${noLocalizedPath}`);
+    localStorage.setItem("selectedLocale", locale);
+    router.push(buildLocalizedPath(locale));
   };
 
   useEffect(() => {
-    const currentLanguage = pathName.split('/')[1]
-    setLanguageSelected(currentLanguage)
-  }, [])
+    const currentLanguage = pathName.split("/").filter(Boolean)[0];
+    if (currentLanguage && i18n.locales.includes(currentLanguage as typeof i18n.locales[number])) {
+      setLanguageSelected(currentLanguage);
+      localStorage.setItem("selectedLocale", currentLanguage);
+      return;
+    }
+
+    const storedLocale = localStorage.getItem("selectedLocale");
+    if (storedLocale && i18n.locales.includes(storedLocale as typeof i18n.locales[number])) {
+      setLanguageSelected(storedLocale);
+    }
+  }, [pathName]);
 
   return (
     <div>

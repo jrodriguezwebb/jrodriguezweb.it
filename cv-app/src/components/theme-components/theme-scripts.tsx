@@ -1,6 +1,8 @@
 import Script from "next/script";
 
 export default function ThemeScripts() {
+  const hasGoogleApiKey = process.env.google_api_key && process.env.google_api_key.trim().length > 0;
+
   return (
     <>
       <Script src="/js/modernizr.custom.js" />
@@ -13,9 +15,11 @@ export default function ThemeScripts() {
       <Script src="/js/jquery.googlemap.js" />
       <Script src="/js/validator.js" />
       <Script src="https://www.google.com/recaptcha/api.js" />
-      <Script
-        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.google_api_key}`}
-      />
+      {hasGoogleApiKey && (
+        <Script
+          src={`https://maps.googleapis.com/maps/api/js?key=${process.env.google_api_key}`}
+        />
+      )}
       <Script src="/js/main.js" />
     </>
   );

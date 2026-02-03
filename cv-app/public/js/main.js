@@ -461,12 +461,14 @@ function animateLayout() {
     });
 
     //Google Maps
-    $("#map").googleMap({
-      zoom: 16, // Google Map ZOOM. You can change this value
-    });
-    $("#map").addMarker({
-      address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
-    });
+    if (jQuery("#map").length && typeof jQuery.fn.googleMap === "function") {
+      jQuery("#map").googleMap({
+        zoom: 16, // Google Map ZOOM. You can change this value
+      });
+      jQuery("#map").addMarker({
+        address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
+      });
+    }
 
     scrollTop();
 

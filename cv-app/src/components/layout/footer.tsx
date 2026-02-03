@@ -6,14 +6,11 @@ export default function Footer() {
     <footer className="site-footer clearfix">
       <div className="footer-social">
         <SocialLinks>
-          <SocialLink href="#" target="_blank" rel="noopener noreferrer">
-            Twitter
+          <SocialLink href="https://www.linkedin.com/in/jrodriguezweb/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
           </SocialLink>
-          <SocialLink href="#" target="_blank" rel="noopener noreferrer">
-            Facebook
-          </SocialLink>
-          <SocialLink href="#" target="_blank" rel="noopener noreferrer">
-            Instagram
+          <SocialLink href="https://github.com/jrodriguezwebb" target="_blank" rel="noopener noreferrer">
+            GitHub
           </SocialLink>
         </SocialLinks>
       </div>

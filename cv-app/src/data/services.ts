@@ -7,16 +7,16 @@ export const servicesMock: Service[] = [
         description: `Scalable web applications with Angular, React, Next.js, and TypeScript. State management with NgRx/Redux. Responsive design and mobile-first approach.`,
     },
     {
-        icon: 'linecons linecons-cloud',
+        icon: 'linecons linecons-data',
         title: 'Backend Development',
         description: `RESTful APIs with NodeJS, NestJS, and ExpressJS. Microservices architecture. Database design with MongoDB, PostgreSQL, and SQL Server.`,
     },
 ]
 
 export const servicesMock2: Service[] = [{
-    icon: 'linecons linecons-cog',
-    title: 'Cloud & DevOps',
-    description: `Cloud deployment on Azure and AWS. Docker containerization. CI/CD pipelines with Jenkins and Azure DevOps. Infrastructure as Code.`,
+    icon: 'linecons linecons-params',
+    title: 'Cloud',
+    description: `Cloud deployment on AWS, GCP and Azure. Docker containerization. CI/CD pipelines with Jenkins and Azure DevOps. Infrastructure as Code.`,
 },
 {
     icon: 'linecons linecons-phone',

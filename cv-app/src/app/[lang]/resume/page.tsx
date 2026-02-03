@@ -9,7 +9,7 @@ import StandardPage from "@/components/layout/standard-page";
 import Timeline from "@/components/theme-components/timeline";
 import TimelineItem from "@/components/theme-components/time-line-item";
 import { certificateData } from "@/data/certificates";
-import { codingSkills, designSkills } from "@/data/skills";
+import { backendSkills, frontendSkills } from "@/data/skills";
 import { timelineItemsExperience } from "@/data/experience";
 import { timelineItemsStudies } from "@/data/studies";
 
@@ -83,7 +83,7 @@ export default function Resume() {
             </BlockTitle>
 
             <Skills>
-              {codingSkills.map((skill, index) => (
+              {backendSkills.map((skill, index) => (
                 <Skill
                   key={index}
                   skillName={skill.skillName}
@@ -99,7 +99,7 @@ export default function Resume() {
             </BlockTitle>
 
             <Skills>
-              {designSkills.map((skill, index) => (
+              {frontendSkills.map((skill, index) => (
                 <Skill
                   key={index}
                   skillName={skill.skillName}

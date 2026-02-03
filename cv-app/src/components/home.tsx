@@ -9,8 +9,8 @@ import Service from "./service";
 import Services from "./services";
 import Skill from "./skill";
 import Skills from "./skills";
-import Subtitle from "./layout/subtitle";
-import { codingSkills, designSkills } from "@/data/skills";
+import Subtitle from "./layout/subtitle";   
+import { backendSkills, frontendSkills } from "@/data/skills";
 import { servicesMock, servicesMock2 } from "@/data/services";
 import HomeButtons from "./home-buttons";
 
@@ -79,7 +79,7 @@ export default function Home() {
           </BlockTitle>
 
           <Skills>
-            {codingSkills.map((skill, index) => (
+            {backendSkills.map((skill, index) => (
               <Skill
                 key={index}
                 skillName={skill.skillName}
@@ -95,7 +95,7 @@ export default function Home() {
           </BlockTitle>
 
           <Skills>
-            {designSkills.map((skill, index) => (
+            {frontendSkills.map((skill, index) => (
               <Skill
                 key={index}
                 skillName={skill.skillName}

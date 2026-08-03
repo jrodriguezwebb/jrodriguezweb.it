@@ -1,5 +1,6 @@
 import PageSubTitle from "./page-subtitle";
 import PageTitle from "./page-title";
+import ErrorBoundary from "../error-boundary";
 
 export default function MainLayout({
   children,
@@ -11,9 +12,9 @@ export default function MainLayout({
   subtitle?: string;
 }) {
   return (
-    <div id="main" className="site-main">
+    <div id="main" className="site-main" role="main">
       <div id="main-content" className="single-page-content">
-        <div id="primary" className="content-area">
+        <div id="primary" className="content-area" role="article">
           {title && (
             <PageTitle>
               <h1>{title}</h1>
@@ -27,7 +28,9 @@ export default function MainLayout({
             className="page-content site-content single-post"
             role="main"
           >
-            {children}
+            <ErrorBoundary>
+              {children}
+            </ErrorBoundary>
           </div>
         </div>
       </div>

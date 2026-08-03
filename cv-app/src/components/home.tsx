@@ -9,7 +9,7 @@ import Service from "./service";
 import Services from "./services";
 import Skill from "./skill";
 import Skills from "./skills";
-import Subtitle from "./layout/subtitle";   
+import Subtitle from "./layout/subtitle";
 import { backendSkills, frontendSkills } from "@/data/skills";
 import { servicesMock, servicesMock2 } from "@/data/services";
 import HomeButtons from "./home-buttons";
@@ -21,12 +21,10 @@ export default function Home() {
   return (
     <MainLayout>
       <HomeTopSection>
-        <Section key="specialities">
-          <Item>
-            <h4>Fullstack-developer - Frontend / Backend</h4>
-          </Item>
-        </Section>
-        <Section key="description">
+        <div key="specialities" aria-label="Professional specialties">
+          <h4>Fullstack-developer - Frontend / Backend</h4>
+        </div>
+        <div key="description" aria-label="Professional introduction">
           <h1>Jesús Rodríguez</h1>
           <p>
             I am Jesús Alfredo Rodríguez Pérez, a seasoned Full Stack Developer
@@ -41,17 +39,17 @@ export default function Home() {
             stakeholders and teams. My goal is to craft impactful web solutions
             with innovation and user-centricity.
           </p>
-        </Section>
-        <Section key="buttons">
+        </div>
+        <div key="buttons" aria-label="Action buttons">
           <HomeButtons />
-        </Section>
+        </div>
       </HomeTopSection>
-      <Subtitle>
+      <Subtitle aria-label="Services section">
         <h2>What I Do</h2>
       </Subtitle>
       <Row>
         <Column xs={12} sm={6}>
-          <Services>
+          <Services aria-label="First set of services">
             {services.map((service, i) => (
               <Service key={i} icon={service.icon}>
                 <h4>{service.title}</h4>
@@ -61,7 +59,7 @@ export default function Home() {
           </Services>
         </Column>
         <Column xs={12} sm={6}>
-          <Services>
+          <Services aria-label="Second set of services">
             {services2.map((service, i) => (
               <Service key={i} icon={service.icon}>
                 <h4>{service.title}</h4>
@@ -74,11 +72,11 @@ export default function Home() {
 
       <Row>
         <Column xs={12} sm={6}>
-          <BlockTitle>
+          <BlockTitle aria-label="Backend skills">
             <h2>Backend Skills</h2>
           </BlockTitle>
 
-          <Skills>
+          <Skills aria-label="Backend skills list">
             {backendSkills.map((skill, index) => (
               <Skill
                 key={index}
@@ -90,11 +88,11 @@ export default function Home() {
         </Column>
 
         <Column xs={12} sm={6}>
-          <BlockTitle>
+          <BlockTitle aria-label="Frontend skills">
             <h2>Frontend Skills</h2>
           </BlockTitle>
 
-          <Skills>
+          <Skills aria-label="Frontend skills list">
             {frontendSkills.map((skill, index) => (
               <Skill
                 key={index}
